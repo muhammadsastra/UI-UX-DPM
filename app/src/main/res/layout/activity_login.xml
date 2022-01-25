@@ -4,15 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EFECEC"
+    android:background="#03A9F4"
     tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="301dp"
+        android:layout_height="215dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="46dp"
+        app:srcCompat="@drawable/logopulsa" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="50dp"
         android:paddingTop="20dp">
 
         <LinearLayout
@@ -27,16 +39,13 @@
 
                 <TextView
                     style="@style/viewParent.headerText.NoMode"
+                    android:layout_width="353dp"
+                    android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true"
-                    android:text="Halaman \nLogin" />
+                    android:layout_marginLeft="0dp"
+                    android:text="Halaman Login"
+                    android:textAlignment="center" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/icon_login" />
             </RelativeLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -47,7 +56,7 @@
                 <EditText
                     android:id="@+id/editTextEmail"
                     style="@style/modifiedEditText"
-                    android:backgroundTint="#2196F3"
+                    android:backgroundTint="#EDEFF1"
                     android:hint="@string/login_email_hint"
                     android:inputType="textEmailAddress"
                     android:maxLines="1" />
@@ -61,7 +70,7 @@
                 <EditText
                     android:id="@+id/editTextPassword"
                     style="@style/modifiedEditText"
-                    android:backgroundTint="#2196F3"
+                    android:backgroundTint="#F5F8FB"
                     android:hint="@string/login_password_hint"
                     android:inputType="textPassword"
                     android:maxLines="1" />
@@ -72,15 +81,15 @@
                 android:layout_gravity="end"
                 android:layout_marginTop="10dp"
                 android:text="Lupa Password?"
-                android:textColor="@color/Backround"
+                android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/newsMoreTextSize" />x
 
             <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
                 android:id="@+id/cirLoginButton"
                 style="@style/loginButton"
                 android:layout_gravity="center_horizontal"
-                android:onClick="onDashbordClick"
                 android:layout_marginTop="@dimen/loginViewsMargin"
+                android:onClick="onDashbordClick"
                 android:text="Log In"
                 app:initialCornerAngle="27dp"
                 app:spinning_bar_color="#FFF"
@@ -93,7 +102,7 @@
                 android:onClick="onLoginClick"
                 android:text="Register Now"
                 android:textAlignment="center"
-                android:textColor="@color/Backround"
+                android:textColor="@color/colorPrimary"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
@@ -111,40 +120,13 @@
                     android:layout_weight="3"
                     android:background="@color/colorPrimaryDark" />
 
-                <TextView
-                    style="@style/viewParent.headerText.NoMode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="6"
-                    android:text="Use other Methods"
-                    android:textAlignment="center"
-                    android:textSize="12sp" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="3"
-                    android:background="@color/colorPrimaryDark" />
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_facebook" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/ic_google_plus" />
-            </LinearLayout>
+                android:gravity="center" />
 
         </LinearLayout>
     </ScrollView>

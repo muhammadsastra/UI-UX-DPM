@@ -17,6 +17,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".IsiPulsa"
+            android:exported="false" />
+        <activity
+            android:name=".PaketDATA"
+            android:exported="false" />
+        <activity
+            android:name=".PulsaHP"
+            android:exported="false" />
+        <activity
+            android:name=".TokenPLN"
+            android:exported="false" />
+        <activity
             android:name=".DashbordActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
